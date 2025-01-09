@@ -1,0 +1,13 @@
+- name: install nodejs
+  host: Web
+  become: yes
+  tasks:
+  - name: nodejs installation
+    ansible.builtin.package:
+      name: nodejs
+      state: present
+  - name: nodejs service start
+    ansible.builtin.service:
+      name: nodejs
+      state: started
+      enabled: yes
