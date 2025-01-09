@@ -1,13 +1,8 @@
-- name: install nodejs
+- name: install git
   hosts: Web
   become: yes
   tasks:
-  - name: nodejs installation
+  - name: git installation
     ansible.builtin.package:
-      name: nodejs
+      name: git
       state: present
-  - name: nodejs service start
-    ansible.builtin.service:
-      name: nodejs
-      state: started
-      enabled: yes
