@@ -1,0 +1,11 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars:
+    TODAY: Thursday
+    MONTH: Jan
+    YEAR: 2025
+  tasks:
+  - name: print the variable
+    ansible.builtin.debug:
+      msg: "My practice started {{ TODAY }} {{ MONTH }} {{ YEAR }}"
