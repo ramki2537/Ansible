@@ -1,5 +1,5 @@
 - name: install nodejs
-  host: Web
+  hosts: Web
   become: yes
   tasks:
   - name: nodejs installation
