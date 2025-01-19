@@ -1,0 +1,17 @@
+- name: vars with prompt
+  hosts: web
+  vars_prompt:
+    - name: USER
+      prompt: Enter user name
+      private: false
+    - name: AGE
+      prompt: Enter age
+      private: false
+    - name: GENDER
+      prompt: Enter Gender
+      private: false
+  tasks:
+  - name: testing
+    ansible.builtin.debug:
+      msg: "My name is {{ USER}}, age is {{ AGE }} and gender is {{ GENDER }}"
+      
