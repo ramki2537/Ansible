@@ -1,6 +1,6 @@
 - name: new test
   hosts: web
-  vars_file:
+  vars_files:
     - course.yaml
   tasks:
   - name: testing
