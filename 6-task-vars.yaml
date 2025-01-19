@@ -1,16 +1,12 @@
 - name: task vars setup
   hosts: web
   vars:
-    NAME: RamaKrishna
+    USER: RamaKrishna
     AGE: 35
     GENDER: Male
   tasks:
   - name: task level vars
     vars:
-      NAME: LAVANYA
+      USER: LAVANYA
     ansible.builtin.debug:
-      msg: "My name is {{ NAME }}, age is {{ AGE }} and gender is {{ GENDER }}"
-
-  - name: checking vars
-    ansbile.builtin.debug:
-      msg: "My name is {{ NAME }}, age is {{ AGE }} and gender is {{ GENDER }}"
+      msg: "My name is {{ USER}}, age is {{ AGE }} and gender is {{ GENDER }}"
