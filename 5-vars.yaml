@@ -1,0 +1,10 @@
+- name: variables
+  hosts: web
+  vars:
+    NAME: RamaKrishna
+    AGE: 35
+    GENDER: Male
+  tasks:
+  - name: variable script
+    ansible.builtin.debug:
+      msg: "My {{ NAME }} and age {{ AGE }} and gender is {{ GENDER }}"
