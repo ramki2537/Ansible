@@ -1,0 +1,14 @@
+- name: Play1
+  hosts: web
+  tasks:
+  - name: Play1 from Task1
+    ansible.builtin.debug:
+      msg: "testing of play1"
+
+- name: Play2
+  hosts: local
+  connection: local
+  tasks:
+  - name: Play1 from Task1
+    ansible.builtin.debug:
+      msg: "testing of play2"

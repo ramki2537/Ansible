@@ -1,0 +1,6 @@
+- name: ping test
+  hosts: web
+  tasks:
+  - name: ping to playbook
+    ansible.builtin.debug:
+      msg: "best practice mans good habit"
