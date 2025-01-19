@@ -10,3 +10,7 @@
       USER: LAVANYA
     ansible.builtin.debug:
       msg: "My name is {{ USER}}, age is {{ AGE }} and gender is {{ GENDER }}"
+  
+  - name: next task of vars
+    ansible.builtin.debug:
+      msg: "My name is {{ USER}}, age is {{ AGE }} and gender is {{ GENDER }}"
