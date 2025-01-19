@@ -4,5 +4,5 @@
     - course.yaml
   tasks:
   - name: testing
-    ansible.buildin.debug:
+    ansible.builtin.debug:
       msg: "My name is {{ USER}}, age is {{ AGE }} and gender is {{ GENDER }}"
