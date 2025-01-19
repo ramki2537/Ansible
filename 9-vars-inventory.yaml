@@ -1,0 +1,6 @@
+- name: vars with inventory
+  hosts: web
+  tasks:
+  - name: variables testing
+    ansible.builtin.debug:
+      msg: "My name is {{ USER}}, age is {{ AGE }} and gender is {{ GENDER }}"
