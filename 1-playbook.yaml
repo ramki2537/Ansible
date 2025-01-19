@@ -1,5 +1,5 @@
-- name: PING
-  hosts: Web
+- name: playbook
+  hosts: web
   tasks:
-  - name: ping test to the server
+  - name: checking playbook
     ansible.builtin.ping:
