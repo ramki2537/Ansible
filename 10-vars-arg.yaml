@@ -1,5 +1,5 @@
 - name: variables from files
-  hosts: database
+  hosts: web
   tasks:
   - name: first playbook
     ansible.builtin.debug:
