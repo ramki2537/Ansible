@@ -1,4 +1,4 @@
-- name: vars with file
+- name: new test
   hosts: web
   vars_file:
     - course.yaml
