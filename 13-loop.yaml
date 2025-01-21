@@ -1,0 +1,10 @@
+- name: loop script
+  hosts: web
+  tasks:
+  - name: installing loop
+    ansible.builtin.package:
+     name: {{ item }}
+     state: present
+  - loop:
+      - gcc
+      - git
