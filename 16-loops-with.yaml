@@ -1,0 +1,11 @@
+- name: loop software install
+  hosts: web
+  become: yes
+  tasks:
+  - name: loop update
+    ansible.builtin.package:
+      name: "{{  }}"
+      state: "{{  }}"
+    loop:
+      - {name: 'gcc', state: 'absent'}
+      - {name: 'git', state: 'present'}
