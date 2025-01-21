@@ -16,5 +16,5 @@
   tasks:
   - name: about singapore
     ansible.builtin.package:
-      msg: " {{ country }} total {{ time }}, {{ places }} {{ current }}, {{ locations }} "
+      msg: "{{ country }} total {{ time }}, {{ places }} {{ current }}, {{ locations }}"
     
