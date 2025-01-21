@@ -1,0 +1,20 @@
+- name: data-types 
+  hosts: web
+  vars:
+    country: "Singapore is the best counry"  #string
+    time: 4 # number
+    places:  #list
+      - queenstown
+      - tampines
+      - jurngeast
+      - kranji
+    current: true #boolen
+    locations: #map
+      tampies: hub
+      queenstown: MRT
+      kranji: baxter
+  tasks:
+  - name: about singapore
+    ansible.builtin.package:
+      msg: " {{ country }} total {{ time }}, {{ places }} {{ current }}, {{ locations }} "
+    
