@@ -15,6 +15,6 @@
       kranji: baxter
   tasks:
   - name: about singapore
-    ansible.builtin.package:
+    ansible.builtin.debug:
       msg: "{{ country }} total {{ time }}, {{ places }} {{ current }}, {{ locations }}"
     
