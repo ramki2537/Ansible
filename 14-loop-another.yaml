@@ -3,7 +3,7 @@
   tasks:
   - name: checking names loop
     ansible.builtin.debug:
-      name: "{{ item }}"
+      name: "Display {{ item }}"
     loop:
       - Rama
       - Lavanya
