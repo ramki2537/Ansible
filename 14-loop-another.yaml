@@ -1,0 +1,11 @@
+- name: names repeat
+  hosts: web
+  tasks:
+  - name: checking names loop
+    ansible.builtin.debug:
+      name: "{{ item }}"
+    loop:
+      - Rama
+      - Lavanya
+      - Abhiram
+      - Jaysvik
