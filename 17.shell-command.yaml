@@ -4,3 +4,6 @@
   tasks:
   - name: excute ls command
     ansible.builtin.shell: ls -ltr > /tmp/text.txt
+
+  - name: execte ls command with command module
+    ansible.builtin.command: ls -ltr
