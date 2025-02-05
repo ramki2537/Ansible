@@ -1,9 +1,14 @@
 - name: shell vs command
-  hosts: backend
-  become: yes
+  hosts: local
+  connection: local
   tasks:
   - name: excute ls command
     ansible.builtin.shell: ls -ltr > /tmp/text.txt
 
   - name: execte ls command with command module
     ansible.builtin.command: ls -ltr
+    register: results_path
+
+  - name: saving output
+    ansible.builtin.debug:
+      msg: "{{ results_path }}"
