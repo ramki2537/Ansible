@@ -6,7 +6,7 @@
     ansible.builtin.shell: ls -ltr > /tmp/text.txt
 
   - name: execte ls command with command module
-    ansible.builtin.command: ls -ltr
+    ansible.builtin.command: lsrrr -ltrrr
     register: results_path
 
   - name: saving output
