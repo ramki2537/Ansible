@@ -1,7 +1,6 @@
 - name: shell vs command
-  hosts: localhost
-  connection: localhost
+  hosts: local
+  connection: local
   tasks:
   - name: excute ls command
     ansible.builtin.shell: ls -ltr > /tmp/text.txt
-    
